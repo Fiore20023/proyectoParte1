@@ -10,7 +10,7 @@
 <link class=".bebas-neue-regular" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
 </head>
 <body class="relative">
     <div class="flex items-center  relative">
@@ -35,15 +35,16 @@
 
 <div class="flex text-center justify-center mt-9">
     <div class=" flex text-center justify-center absolute">
-        <form method="post" action="https://formspree.io/f/moqgkroz">
-            <label for="nombre">Nombre</label><span><input type="text" id="nombre" name="nombre" required></span><br><br>
-            <label for="apellido">Apellido</label><span></span><input type="text" id="apellido" name="apellido"required></span><br><br>
-            <label for="mail">Email</label><span></span><input type="text" id="mail" name="mail"required></span><br><br>
-            <label for="pass">Password </label><span></span><input type="password" id="pass" name="pass"required></span><br><br>
+        <form id="miformulario" method="post" action="https://formspree.io/f/moqgkroz">
+            <label for="nombre">Nombre</label><span><input type="text" id="nombre" name="nombre" ></span><br><br>
+            <label for="apellido">Apellido</label><span></span><input type="text" id="apellido" name="apellido"></span><br><br>
+            <label for="mail">Email</label><span></span><input type="text" id="mail" name="mail"></span><br><br>
+            <label for="pass">Password </label><span></span><input type="password" id="pass" name="pass"></span><br><br>
             <input class=" text-xl bg-black text-white pt-3 pb-3 pl-6 pr-6 rounded-2xl" type="submit">
         </form>
     </div>
 </div>
 </div>
+<script src="login.js"></script>
 </body>
 </html>

@@ -13,11 +13,11 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
   </head>
   <body class="relative">
     <div class="flex items-center relative justify-between">
-      <div  class=" ml-2 border-2 w-1/5 h-screen rounded-r-2xl bg-[##EEF0EB]"
-      >
+      <div class="ml-2 border-2 w-1/5 h-screen rounded-r-2xl bg-[##EEF0EB]">
         <a href="index.html">
           <img
             class="w-7/12 mx-auto"
@@ -57,7 +57,7 @@
         <div class="flex text-center justify-center absolute">
           <form action="" method="post">
             <label for="album">Nombre del Album</label
-            ><input type="text" id="Album" name="Album" required />
+            ><input type="text" id="Album" name="Album"  />
             <label for="lanzamiento">Año de Lanzamiento del Album</label
             ><input
               type="number"
@@ -65,24 +65,35 @@
               name="lanzamiento"
               min="1700"
               max="2024"
-              required
             /><br /><br />
             <textarea name="descripcion" id="descripcion" cols="30" rows="10">
-Descripción</textarea 
+Descripción</textarea
             ><br />
             <label for="imagen_album">Imagen del Album</label>
             <input
               type="url"
-              id="imagen_album"
+              id="input"
               name="imagen_album"
               class="imagen_album"
-              placeholder="Colocar link de la imagen: https://www.webdelaimagen.com/album.jpg" 
-            /> <span> <button class="text-xl bg-black text-white pt-0 pb-0 pl-6 pr-6 m-auto rounded-2xl"><span>Guardar</span><link rel="stylesheet" href="editarAlbum"></button>
-            <button class="text-xl bg-black text-white pt-0 pb-0 pl-6 pr-6 m-auto rounded-2xl"><span>Cancelar</span><link rel="stylesheet" href="editarAlbum"></button>
-          </span>
+              placeholder="Colocar link de la imagen: https://www.webdelaimagen.com/album.jpg"
+            />
+            <span>
+              <button
+                class="text-xl bg-black text-white pt-0 pb-0 pl-6 pr-6 m-auto rounded-2xl"
+              >
+                <span>Guardar</span><link rel="stylesheet" href="editarAlbum" />
+              </button>
+              <button
+                class="text-xl bg-black text-white pt-0 pb-0 pl-6 pr-6 m-auto rounded-2xl"
+              >
+                <span>Cancelar</span
+                ><link rel="stylesheet" href="editarAlbum" />
+              </button>
+            </span>
           </form>
         </div>
       </div>
     </div>
+    <script src="login.js"></script>
   </body>
 </html>
